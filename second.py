@@ -1,9 +1,27 @@
 def cislo_text(cislo):
-    # funkce zkonvertuje cislo do jeho textove reprezentace
-    # napr: "25" -> "dvacet pět", omezte se na cisla od 0 do 100
-    return "dvacet pět"
+    jednotky = ["nula", "jedna", "dva", "tri", "čtyři", "pet", "sest", "sedm", "osm", "devět"]
+    desitky = ["deset", "dvacet", "tricet", "čtyřicet", "padesát", "sedesát", "sedmdesát", "osmdesát", "devadesát"]
 
-if   == "__main_ cislo = input (" 0 ")(" -> ")
-    text = "nula" ("0")
+    teen = ["deset", "jedenact", "dvanact", "trinact", "ctrnact", "patnact", "sestnact", "sedmnact", "osmnact", "devatenact"]
+    
+
+    if cislo < 0 or cislo > 100:
+       return "cislo musi byt v rozsahu 0-100."
+    elif cislo < 10:
+        return jednotky[cislo]
+    elif cislo < 20:
+        return  teen[cislo - 10]
+    elif cislo < 100:
+        d = cislo // 10
+        j = cislo % 10
+        if j == 0:
+         return desitky[d]
+        else:
+            return desitky[d] + " " + jednotky[j]
+    else:
+        return "sto"
+
+
+if __name__ == "__main__":
+    cislo_text = "nula"(0)
     print("nula")
-    return "nula"

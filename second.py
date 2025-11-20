@@ -1,6 +1,5 @@
 def cislo_text(cislo):
-    # funkce zkonvertuje cislo do jeho textove reprezentace
-    # napr: "25" -> "dvacet pět", omezte se na cisla od 0 do 100
+  
     nact = {11: "jedenact", 12: "dvanact"}
     desitky = {1: "deset", 2: "dvacet", 3: "tricet"}
     jednoty = {1: "jedna", 2: "dva", 3: "tri"}

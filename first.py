@@ -1,4 +1,4 @@
-# funkce vypise "Číslo X je sudé" pokud je cislo sude a "Číslo X je liché" pokud je cislo liche
+ 
 def sudy_nebo_lichy(cislo):
     if cislo % 2:
         return "liche"
